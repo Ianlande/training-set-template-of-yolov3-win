@@ -18,11 +18,12 @@ Darknet_windows的训练集模板以及使用方式，用于windows10系统
 ##### 3. 使用`labelimg`对图片打标签，并将所有`xml`文件放入`data\labels`中  
 ##### 4. 使用`script`文件夹下的`training_set_label.py`  
 ##### 5. 修改其它配置文件  
+##### 6. 下载`darknet53.conv.74`
 
-### `training_set_label.py`
+#### `training_set_label.py`
 其目的是为每一个图片的`xml`文件创建一个`txt`文件，并将其放入`data\Images`中，同时根据9:1的比例分配训练集与测试集
 
-### 修改其它配置文件
+#### 修改其它配置文件
 ##### `cfg`中的`training_set_template.cfg`
 修改classes与filters，一共需要修改三处。如果检测A类物体，则classes=A，filters=(classess+5)*3=(A+5)*3
 
@@ -35,4 +36,4 @@ Darknet_windows的训练集模板以及使用方式，用于windows10系统
 ## 补充
 > * 你可能需要修改`script`中的脚本文件以便满足你的需要  
 > * 这个包中并没有设置测试集，需要可以自行添加
-> * 参考https://github.com/AlexeyAB/darknet
+> * 下载地点以及其它参考https://github.com/AlexeyAB/darknet

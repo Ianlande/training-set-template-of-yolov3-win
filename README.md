@@ -44,7 +44,7 @@ Darknet_windows的训练集模板以及使用方式，用于windows10系统
 ------
 
 ## 使用数据
-参考https://github.com/AlexeyAB/darknet
+参考https://github.com/AlexeyAB/darknet  
 在`windows`版本的`Darknet\darknet-master\build\darknet\x64`下创建一个`.cmd`文件，填入如下格式的命令  
 ### 训练
 格式：

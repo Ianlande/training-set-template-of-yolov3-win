@@ -40,3 +40,35 @@ Darknet_windows的训练集模板以及使用方式，用于windows10系统
 > * 你可能需要修改`script`中的脚本文件以便满足你的需要  
 > * 这个包中并没有设置测试集，需要可以自行添加
 > * 参考https://github.com/AlexeyAB/darknet
+
+------
+
+## 使用数据
+参考https://github.com/AlexeyAB/darknet
+在`windows`版本的`Darknet\darknet-master\build\darknet\x64`下创建一个`.cmd`文件，填入如下格式的命令  
+### 训练
+格式：
+```
+darknet.exe detector train (.data文件路径) (.cfg文件路径) -i 0 darknet53.conv.74
+```
+`-i 0`表示使用第一个`GPU`
+例如:
+```
+darknet.exe detector train D:\\MyNetWork\\Vrep_yolov3_training\\cfg\\yolov3-vrep-ddpg-obj.data   D:\\MyNetWork\\Vrep_yolov3_training\\cfg\\yolov3-vrep-ddpg.cfg   -i 0   darknet53.conv.74
+
+pause
+```
+
+------
+
+### 测试
+格式：
+```
+darknet.exe detector test (.data文件路径) (.cfg文件路径) -i 0 (backup文件中的权重文件路径)
+```
+例如:
+```
+darknet.exe detector test D:\\MyNetWork\\Vrep_yolov3_training\\cfg\\yolov3-vrep-ddpg-obj.data   D:\\MyNetWork\\Vrep_yolov3_training\\cfg\\yolov3-vrep-ddpg.cfg   -i 0  D:\\MyNetWork\\Vrep_yolov3_training\\backup\\yolov3-vrep-ddpg_2000.weights
+
+pause
+```

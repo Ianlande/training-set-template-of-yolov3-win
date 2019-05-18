@@ -40,4 +40,4 @@ Darknet_windows的训练集模板以及使用方式，用于windows10系统
 ## 补充
 > * 你可能需要修改`script`中的脚本文件以便满足你的需要  
 > * 这个包中并没有设置测试集，需要可以自行添加
-> * 下载地点以及其它参考https://github.com/AlexeyAB/darknet
+> * `darknet53.conv.74`下载地点以及其它参考https://github.com/AlexeyAB/darknet

@@ -1,0 +1,5 @@
+classes = 1
+train  = D:/MyNetWork/Vrep_yolov3_training/data/train.txt
+valid  = D:/MyNetWork/Vrep_yolov3_training/data/valid.txt
+names  = D:/MyNetWork/Vrep_yolov3_training/data/yolov3-vrep-ddpg-obj.names
+backup = D:/MyNetWork/Vrep_yolov3_training/backup/
